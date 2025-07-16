@@ -1,62 +1,66 @@
 #panel {
- font-family: "Noto Sans", sans-serif;
- font-size: 13px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px;
 }
 
-#panel #panelLeft, #panel #panelCenter {
- spacing: 0;
+/* Grouped panel sections */
+#panel #panelLeft, 
+#panel #panelCenter {
+  spacing: 0;
 }
 
+/* Base panel button styles */
 #panel .panel-button {
- -natural-hpadding: 4px;
- -minimum-hpadding: 4px;
+  -natural-hpadding: 4px;
+  -minimum-hpadding: 4px;
 }
 
+/* Child elements within panel buttons */
 #panel .panel-button StLabel {
- padding: 0;
-}
-
-#panel .panel-button.clock-display .clock {
- padding: 0 8px;
+  padding: 2px;
 }
 
 #panel .panel-button .system-status-icon {
- icon-size: 16px;
- padding: 4px;
- margin: 0 2px;
-}
-
-#panel .panel-button .panel-status-menu-box .system-status-icon {
- margin: 0;
-}
-
-#panel .panel-button .panel-status-menu-box StLabel {
- padding: 0 0 0 2px;
+  icon-size: 16px;
+  padding: 4px;
+  margin: 0 2px;
 }
 
 #panel .panel-button .panel-status-menu-box,
 #panel .panel-button .panel-status-indicators-box {
- spacing: 2px;
+  spacing: 2px;
+}
+
+/* Specific component adjustments */
+#panel .panel-button.clock-display .clock {
+  padding: 0 8px;
+}
+
+#panel .panel-button .panel-status-menu-box .system-status-icon {
+  margin: 0;
+}
+
+#panel .panel-button .panel-status-menu-box StLabel {
+  padding: 0 0 0 2px;
 }
 
 #panel .panel-button .appindicator-trayicons-box,
-#panel .panel-button .panel-status-indicators-box.appindicator-box {
- margin: 0 4px;
-}
-
+#panel .panel-button .panel-status-indicators-box.appindicator-box,
 #panel .panel-button .clipboard-indicator-icon {
- margin: 0 4px;
+  margin: 0 4px;
 }
 
+/* Icon style overrides */
 #panel .panel-button .app-menu-icon {
- -st-icon-style: symbolic;
+  -st-icon-style: symbolic;
 }
 
+/* Specific widget fixes */
 #panel Gjs_ui_panel_AggregateMenu.panel-button .system-status-icon {
- margin: 0 !important;
- padding: 4px !important;
+  margin: 0 !important;
+  padding: 4px !important;
 }
 
 #panel Gjs_kimpanel_kde_org_indicator_KimIndicator.panel-button .panel-status-menu-box {
- margin: 0 4px;
+  margin: 0 4px;
 }
